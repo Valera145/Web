@@ -65,8 +65,8 @@ try {
   exit();
   }
   $id = $db->lastInsertId();
-  $sppe= $db->prepare("INSERT INTO powers SET power=:power, id_p=:id_p");
-  $sppe->bindParam(':id_p', $id);
+  $sppe= $db->prepare("INSERT INTO powers SET power=:power, id=:id");
+  $sppe->bindParam(':id', $id);
   foreach($superpowers as $inserting){
 	$sppe->bindParam(':power', $inserting);
 	if($sppe->execute()==false){
