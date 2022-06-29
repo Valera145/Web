@@ -1,11 +1,47 @@
 <style>
-  .form1{
+  #content, header div{
+    background-color: rgba(123, 0, 212, 0.1);
     max-width: 960px;
-    text-align: center;
     margin: 0 auto;
-  }
-  .error {
-    border: 2px solid red;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+div.table ,#form, div.link-list{
+    background-color: rgba(123, 0, 212, 0.24);
+}
+label {
+    margin:10px 0;
+}
+input[type=text] {
+  padding:10px;
+  margin:10px 0;
+  border:1;
+    border-radius:15px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+input[type=email] {
+  padding:10px;
+  margin:10px 0;
+  border:1;
+    border-radius:15px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+select {
+  padding:10px;
+  border-radius:10px;
+}
+textarea {
+  resize: vertical;
+  padding:15px;
+  margin:10px 0;
+  border-radius:15px;
+  border:1;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+}
+.error {
+    border: 3px solid red;
   }
 </style>
 <body>
