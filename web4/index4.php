@@ -255,3 +255,4 @@ else {
   // Делаем перенаправление.
   header('Location: index4.php');
 
+}
