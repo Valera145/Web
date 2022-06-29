@@ -231,8 +231,13 @@ else {
     exit();
     }
     $id = $db->lastInsertId();
+<<<<<<< HEAD
     $sppe= $db->prepare("INSERT INTO powers SET power=:power, id_p=:id_p");
     $sppe->bindParam(':id_p', $id);
+=======
+    $sppe= $db->prepare("INSERT INTO powers SET power=:power, id=:id");
+    $sppe->bindParam(':id', $id);
+>>>>>>> fb449318625ccfad18c73ad8d91100a32a17706c
     foreach($superpowers as $inserting){
     $sppe->bindParam(':power', $inserting);
     if($sppe->execute()==false){
@@ -252,4 +257,8 @@ else {
 
   // Делаем перенаправление.
   header('Location: index4.php');
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fb449318625ccfad18c73ad8d91100a32a17706c
