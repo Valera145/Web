@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       $get->execute();
       $inf=$get->fetchALL();
       $values['name']=$inf[0]['name'];
-      $values['email']=$inf[0]['email'];
+      $values['email']=$inf[0]['mail'];
       $values['year']=$inf[0]['year'];
       $values['sex']=$inf[0]['sex'];
       $values['limb']=$inf[0]['limb'];
